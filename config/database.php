@@ -14,14 +14,6 @@ class Database {
 
 
     public static function connectToDatabase() {
-        // Utiliser Dotenv pour récupérer les variables d'environnement
-        self::$server = $_ENV['DB_HOST'];
-        self::$login = $_ENV['DB_LOGIN'];
-        self::$password = $_ENV['DB_PASSWORD'];
-        self::$databaseName = $_ENV['DB_NAME'];
-        self::$charset = $_ENV['DB_CHARSET'];
-
-
         try {
             $dsn = "mysql:host=" . self::$server . ";dbname=" . self::$databaseName . ";charset=" . self::$charset;
             $pdo = new PDO($dsn, self::$login, self::$password);
