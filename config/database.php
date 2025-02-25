@@ -4,14 +4,14 @@ class Database {
     private static $server = "127.0.0.1";
     private static $username = "root";
     private static $password = "";
-    private static $nomBdd = "SIO2D-d5-testrequetes";
+    private static $name = "SIO2D-d5-testrequetes";
     private static $charset = "utf8";
 
     // Méthode statique pour la connexion
     public static function connectionDB() {
         try {
             $pdo = new PDO(
-                "mysql:host=" . self::$server . ";dbname=" . self::$nomBdd . ";charset=" . self::$charset,
+                "mysql:host=" . self::$server . ";dbname=" . self::$$name . ";charset=" . self::$charset,
                 self::$username,
                 self::$password
             );
