@@ -1,0 +1,52 @@
+body h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+body section form{
+    display:flex;
+    flex-direction:column;
+    margin: 60px auto;
+    gap: 10px;
+    width: 300px;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+}
+.success {
+    display: flex;
+    justify-content: center;
+}
+
+body section #em{
+    height: 25px;
+    border: none;
+}
+
+body section #us{
+    height: 25px;
+    border: none;
+}
+
+body section #pas{
+    height: 25px;
+    border: none;
+}
+
+body section #conpas{
+    height: 25px;
+    border: none;
+}
+
+body section #res{
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 4px;
+}
