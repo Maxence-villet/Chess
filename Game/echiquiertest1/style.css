@@ -1,0 +1,37 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Espace entre les lignes */
+}
+
+.grid-row {
+    display: flex;
+    gap: 5px; /* Espace entre les boutons */
+}
+
+button {
+    width: 50px;
+    height: 50px;
+     /* Couleur de fond des boutons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Changement de couleur au survol */
+}
+#pawn{
+    background-color: #ff0000;
+}
