@@ -28,6 +28,7 @@ session_start();
             <input type="email" name="email" placeholder="  Email" required id="em"/>
             <input type="password" name="password" placeholder="  Password" required id="pas"/>
             <input type="submit" name="submitForm" value="Login" id="log"/>
+            <a href="register.php">Register</a>
         </form>
     </section>
 
