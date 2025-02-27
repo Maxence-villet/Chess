@@ -1,0 +1,41 @@
+
+body {
+    background-color: rgb(33, 42, 112);
+}
+.background {
+    background: url('../../images/chessHorizontal.jpg');
+    width: 100%;
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.background .play {
+    background-color: rgba(0, 0, 0, 0);
+    color: #f7f7f7;
+    border: none;
+    font-size: 3em;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-weight: bold;
+    opacity: 20%;
+}
+
+.background .play:hover {
+    background-color: rgb(33, 42, 112);
+    opacity: 80%;
+    transition: ease-in-out 0.3s;
+}
+
+
+@media (max-width: 700px) {
+    .background {
+        background: url('../../images/chessVercial.jpg');
+        width: 100%;
+        height: 85vh;
+        background-size: cover;
+        background-position: center;
+    }
+}
