@@ -36,7 +36,7 @@ if (isset($_POST['update_name'])) {
             } else {
                 $stmt = $conn->prepare("UPDATE users SET username = :new_username WHERE id = :user_id");
                 $stmt->execute(['new_username' => $new_username, 'user_id' => $_SESSION['user_id']]);
-                $_SESSION['success'] = "Username successfully updated.";
+                $_SESSION['success'] = "Username successfully updated!";
             }
         }
     }
