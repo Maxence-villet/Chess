@@ -1,3 +1,7 @@
+body{
+    background-color: #22427C;
+}
+
 body h1 {
     display:flex;
     align-items: center;
@@ -5,6 +9,11 @@ body h1 {
     height: 200px;
     margin: auto;
     margin-bottom: 50px;
+    color: white;
+}
+
+a {
+    color: white;
 }
 
 body section form{
@@ -19,10 +28,12 @@ body section form{
 .error-message{
     display: flex;
     justify-content: center;
+    color: white;
 }
 .success-message { 
     display: flex;
     justify-content: center;
+    color: white;
 }
 
 body section #em{
@@ -40,5 +51,6 @@ body section #log{
     height: 35px;
     border: none;
     border-radius: 4px;
+    background-color: #D3D3D3;
 }
 
