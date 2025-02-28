@@ -1,0 +1,112 @@
+body{
+    background-color: #22427C;
+}
+
+body h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 50px;
+    color: white;
+}
+
+body h2{
+    font-size: 20px;
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    margin: 60px auto;
+    gap: 10px;
+    width: 300px;
+}
+
+.acc{
+    text-align: left;
+    display:flex;
+    flex-direction:column;
+    margin: 60px auto;
+    gap: 10px;
+    width: 300px;
+    color: white;
+}
+
+.usern{
+    text-align: left;
+    display:flex;
+    flex-direction:column;
+    margin: 60px auto;
+    gap: 10px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+}
+
+body section form{
+    display:flex;
+    flex-direction:column;
+    margin: 0px auto;
+    gap: 10px;
+    width: 300px;
+}
+
+body section #conf{
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 4px;
+}
+
+.button{
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 4px;
+    background-color: #D3D3D3;
+}
+
+.pic {
+    text-align: left;
+    display:flex;
+    flex-direction:column;
+    margin: 60px auto;
+    gap: 10px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.logout-btn {
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 4px; 
+    background-color: #D3D3D3; 
+}
+
+body section #user{
+    height: 25px;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+}
+
+img {
+    object-fit: cover; 
+}
+
+.error-message{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.success-message { 
+    display: flex;
+    justify-content: center;
+    color: white;
+}
