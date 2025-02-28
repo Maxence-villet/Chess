@@ -1,16 +1,11 @@
 <?php
-require '../vendor/autoload.php';
-use Dotenv\Dotenv;
-
-$dotenv = Dotenv::createImmutable(__DIR__);
-$dotenv->load();
 
 class Database {
-    private static $server = null;
-    private static $login = null;
-    private static $password = null;
-    private static $databaseName = null;
-    private static $charset = null;
+    private static $server = "docker-project-db-1";
+    private static $login = "root";
+    private static $password = "mariadb";
+    private static $databaseName = "chess";
+    private static $charset = "utf8mb4";
 
 
     public static function connectToDatabase() {
@@ -28,7 +23,7 @@ class Database {
         $pdo = self::connectToDatabase();
         $statement = $pdo->prepare($query);
         $statement->execute($parameters);
-        return $sstatement;
+        return $statement;
     }
 
     // Static method to convert query results into an HTML table
