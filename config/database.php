@@ -28,7 +28,7 @@ class Database {
         $pdo = self::connectToDatabase();
         $statement = $pdo->prepare($query);
         $statement->execute($parameters);
-        return $statement;
+        return $sstatement;
     }
 
     // Static method to convert query results into an HTML table
