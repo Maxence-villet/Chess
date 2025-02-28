@@ -4,7 +4,7 @@ session_start();
 $_SESSION['player_id'] = 1;
 $_SESSION['nickname'] = 'TestUser';
 
-include __DIR__ . "/partials/head.php"; // Chemin relatif corrigé
+include __DIR__ . "/partials/head.php"; 
 ?>
 
 <body>
