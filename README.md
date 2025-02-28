@@ -40,4 +40,4 @@ Les contributions sont les bienvenues ! Pour contribuer :
 5. Ouvrez une Pull Request
 
 ## Licence
-MIT
+CC0-1.0 license
