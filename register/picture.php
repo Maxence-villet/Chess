@@ -21,8 +21,8 @@ if (isset($_FILES['profile_picture'])) {
         $_SESSION['error'] = "Error uploading the file.";
     }
     else {
-        $newFileName = uniqid('profile_', true) . '.' . $fileExtension;
-        $targetFilePath = $uploadDir . $newFileName;
+        $FileName =  basename($_FILES['profile_picture']['name']);
+        $targetFilePath = $uploadDir . $FileName;
 
         if (move_uploaded_file($_FILES['profile_picture']['tmp_name'], $targetFilePath)) {
             $db = Database::getInstance();
@@ -31,14 +31,12 @@ if (isset($_FILES['profile_picture'])) {
             if ($conn) {
                 $stmt = $conn->prepare("UPDATE users SET profile_picture_path = :profile_picture_path WHERE id = :user_id");
                 $stmt->execute([
-                    'profile_picture_path' => $targetFilePath,
+                    'profile_picture_path' => $FileName, 
                     'user_id' => $_SESSION['user_id']
                 ]);
 
                 if ($stmt->rowCount() > 0) {
                     $_SESSION['success'] = "Profile picture updated successfully!";
-                } else {
-                    $_SESSION['error'] = "No changes made.";
                 }
             } else {
                 $_SESSION['error'] = "Failed to connect to the database.";
